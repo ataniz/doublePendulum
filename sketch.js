@@ -6,8 +6,8 @@ let a1 = 0;
 let a2 = 0;
 let a1_v = 0;
 let a2_v = 0;
-let a1_s = 0;
-let a2_s = 0;
+let a1_a = 0.001;
+let a2_a = -0.1;
 let px2 = -1;
 let py2 = -1;
 
@@ -39,8 +39,10 @@ function draw() {
   ellipse(x1, y1, m1, m1);
   ellipse(x2, y2, m1, m1);
 
-  a1 += 0.02;
-  a2 -= 0.05;
+  a1 += a1_v;
+  a2 += a2_v;
+  a1_v += a1_a;
+  a2_v += a2_a;
 
   buffer.stroke(232, 93, 117);
   if (frameCount > 1) {
