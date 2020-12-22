@@ -17,13 +17,13 @@ let px2, py2;
 let g = 9.81 / (60 * frate); //at 60fps
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(1100, 1100);
   frameRate(frate);
   // we dont have the whole day, increase gravity
   g = g * 10;
   // starting from 90  degrees
   a1 = PI / 2;
-  a2 = PI / 2;
+  a2 = PI;
   // buffer created for drawing
   buffer = createGraphics(width, height);
   buffer.background(14, 39, 60);
