@@ -23,7 +23,7 @@ function setup() {
   g = g * 10;
   // starting from 90  degrees
   a1 = PI / 2;
-  a2 = PI;
+  a2 = PI / 2;
   // buffer created for drawing
   buffer = createGraphics(width, height);
   buffer.background(14, 39, 60);
