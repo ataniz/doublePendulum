@@ -9,11 +9,12 @@ let a2_v = 0;
 
 let px2 = -1;
 let py2 = -1;
-let g = 1;
+let g = 9.81 / (60 * 60); //at 60fps
 
 function setup() {
   createCanvas(1000, 1000);
-
+  frameRate(60);
+  g = g * 2; //double the gravity so it looks nicer
   a1 = PI / 2;
   a2 = PI / 2;
 
